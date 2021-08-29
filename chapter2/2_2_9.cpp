@@ -18,7 +18,7 @@ void buildlist(linklist &L)
         r->next=s;
         r=r->next;
     }
-    r=r->next;
+    r->next=NULL;
 }
 void deletemin(linklist &L)
 {
