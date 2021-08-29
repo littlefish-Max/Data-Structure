@@ -20,6 +20,7 @@ void buildlist(lnode *L)
             r->next=s;
             r=r->next;
         }
+        r->next=NULL;
     }
 }
 void disp(lnode *L)
@@ -32,7 +33,7 @@ void disp(lnode *L)
     }
     cout<<endl;
 }
-void deletex(lnode *L,int x)
+void deletex(lnode *&L,int x)
 {
     if(L==NULL) return;
     lnode *p;
