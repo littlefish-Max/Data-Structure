@@ -8,7 +8,7 @@ struct SqList{
 };
 void reverse(SqList &L)
 {
-    for(int i=0;i<=L.length/2;i++)
+    for(int i=0;i<L.length/2;i++)
     {
         int v=L.a[i];
         L.a[i]=L.a[L.length-i-1];
